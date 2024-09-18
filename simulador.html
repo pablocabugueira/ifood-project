@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Comercial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador Comercial</h1>
+        <form id="simuladorForm">
+            <div class="row">
+                <div class="col">
+                    <label for="dataInicial">Data Inicial</label>
+                    <input type="date" id="dataInicial" name="dataInicial" required>
+                </div>
+                <div class="col">
+                    <label for="dataFinal">Data Final</label>
+                    <input type="date" id="dataFinal" name="dataFinal" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="horaInicial">Horário Inicial</label>
+                    <input type="time" id="horaInicial" name="horaInicial" required>
+                </div>
+                <div class="col">
+                    <label for="horaFinal">Horário Final</label>
+                    <input type="time" id="horaFinal" name="horaFinal" required>
+                </div>
+                <div class="checkbox-container">
+                    <label for="24h">24h</label>
+                    <input type="checkbox" id="24h" name="24h">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="unidadeNegocio">Unidade de Negócio</label>
+                    <select id="unidadeNegocio" name="unidadeNegocio" required>
+                        <option value="" disabled selected>Selecione a Unidade</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="familiaProduto">Família do Produto</label>
+                    <select id="familiaProduto" name="familiaProduto" required>
+                        <option value="" disabled selected>Selecione a Família</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="grupoProduto">Grupo de Produto</label>
+                    <select id="grupoProduto" name="grupoProduto" required>
+                        <option value="" disabled selected>Selecione o Grupo</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="produto">Produto</label>
+                    <select id="produto" name="produto" required>
+                        <option value="" disabled selected>Selecione o Produto</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="cliente">Cliente</label>
+                    <select id="cliente" name="cliente" required>
+                        <option value="" disabled selected>Selecione o Cliente</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="vendedor">Vendedor</label>
+                    <select id="vendedor" name="vendedor" required>
+                        <option value="" disabled selected>Selecione o Vendedor</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="descartar">Descartar Simulação</button>
+                <button type="submit" id="confirmar">Confirmar Simulação</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

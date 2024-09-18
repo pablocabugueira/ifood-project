@@ -1,0 +1,141 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px;
+    background-color: #fedab8;
+    text-align: center;
+}
+
+body{
+    background-color: #fcf3eb;
+}
+
+.titulo {
+ justify-content: center;
+ display: flex;
+}
+.titulo h2{
+    color: #9f3124;
+   }
+
+.header img {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.header img.profile-icon {
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    right: 25px;;
+    position:absolute;
+}
+
+.btn-custom-import {
+    background-color: #dbbd97; 
+    color: #924d34;
+    border-width: 1px;
+    border-color: #924d34;
+    font-weight: bold;
+
+}
+
+.btn-custom-export {
+    background-color: #dbbd97; 
+    color: #924d34;
+    border-width: 1px;
+    border-color: #924d34;
+    font-weight: bold;
+}
+
+.table-container {
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.d-flex {
+    gap: 10px;
+}
+
+.action-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*personalização do filtro e tabela*/
+.filters {
+    background-color: #dbbd97; /* Laranja fosco para o fundo dos filtros */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.filters .form-select,
+.filters .form-control {
+    border: 1px solid #dbbd97; /* Bordas em um tom mais escuro de laranja */
+}
+
+.filters .form-select:focus,
+.filters .form-control:focus {
+    border-color: #b97b29; /* Tom mais escuro de laranja para o foco */
+    box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
+}
+
+.filters .form-select option {
+    background-color: #fff8ea; /* Fundo das opções do seletor */
+    color: #924d34; /* Cor do texto das opções */
+}
+
+.filters .form-select option:hover {
+    background-color: #e5942b; /* Tom mais escuro de laranja ao passar o mouse sobre as opções */
+}
+
+
+
+.table-container {
+    background-color: #fff8ea; 
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+.table thead {
+    background-color: #dbbd97; 
+    color: #924d34;
+}
+
+.table tbody tr:hover {
+    background-color: #f7d1b3; 
+}
+
+.table tbody tr.active {
+    background-color: #f9b07f !important;
+}
+/**/
+
+/* Efeito de hover */
+tbody tr:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+/* Efeito ao clicar */
+tbody tr.active {
+    background-color: #eca68c !important;
+}
+
+@media (max-width: 768px) {
+    .action-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .filters {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
